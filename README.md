@@ -11,7 +11,7 @@
 
 
 <p align="center">
-  <a href="#credits">Credits</a> •
+  <a href="#credits">• Credits</a> • 
 </p>
 
 ![screenshot](https://github.com/carti6ix/Hydra/blob/main/misc/images/hydrabanner.gif)
