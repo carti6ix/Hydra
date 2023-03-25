@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$primary: #1d1d1d;
+$secondary: #282828;
+$accent: green;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: $primary;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  display: block;
+  padding: 0px 5%;
+  position: relative;
+}
+
+.section-title {
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  @media (max-width: 800px) {
+    font-size: 35px !important;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 30px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "scss/hero-section";
+@import "scss/products";
+@import "scss/footer";

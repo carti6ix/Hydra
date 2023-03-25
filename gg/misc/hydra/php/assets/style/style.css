@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: #1d1d1d;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  display: block;
+  padding: 0px 5%;
+  position: relative;
+}
+
+.section-title {
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .section-title {
+    font-size: 35px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-title {
+    font-size: 30px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 36, 0.38)), to(#1d1d1d)), url("../images/bg.jpg");
+  background: linear-gradient(to bottom, rgba(36, 36, 36, 0.38), #1d1d1d), url("../images/bg.jpg");
+  text-align: center;
+  padding-top: 272px;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 96px;
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 51px;
+}
+
+.hero-section p {
+  max-width: 637px;
+  width: 90%;
+  margin: 7px auto 62px auto;
+  font-weight: 300;
+}
+
+.hero-section .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.hero-section .categories button {
+  padding: 11px 48px;
+  min-width: 235px;
+  font-size: 18px;
+  margin: 21px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hero-section .categories button:hover {
+  background-color: white;
+  color: black;
+}
+
+.hero-section .categories .clicked {
+  background-color: white;
+  color: black;
+}
+
+.products-container {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+.products-container .container {
+  padding: 76px 5%;
+}
+
+.products-container .container .product-list-categories {
+  margin-top: 74px;
+}
+
+.products-container .container .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products-container .container .products .product-item {
+  border: 5px solid #282828;
+  padding: 31px 47px;
+  text-align: center;
+  max-width: 327px;
+  font-style: normal;
+  margin: 14px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.products-container .container .products .product-item img {
+  width: 80px;
+}
+
+.products-container .container .products .product-item .product-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 27px;
+}
+
+.products-container .container .products .product-item .product-price {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.products-container .container .products .product-item .product-desc {
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 18px;
+  margin-bottom: 31px;
+}
+
+.products-container .container .products .product-item button {
+  background: green;
+  border: none;
+  font-weight: 700;
+  padding: 15px 0px;
+  width: 158px;
+  color: white !important;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-top: auto;
+}
+
+.products-container .container .products .product-item button:hover {
+  background-color: green;
+  border-radius: 14px;
+}
+
+.products-container .container .products .product-item:hover {
+  border: 5px solid green;
+  border-radius: 21px;
+}
+
+@media (max-width: 500px) {
+  .products-container .container .products .product-item {
+    margin: 14px 0px;
+  }
+}
+
+.products-container .container .product-categories {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products-container .container .product-categories button {
+  padding: 10px 25px;
+  font-weight: 700;
+  border: 1px solid #282828;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 26px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+.products-container .container .product-categories button:hover {
+  background-color: green;
+  border-radius: 7px;
+}
+
+.products-container .container .product-categories .clicked {
+  background-color: green;
+  border-radius: 7px;
+}
+
+footer .container {
+  color: white !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+footer .container .logo {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+footer .container .socials img {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+.hero-section {
+  background: linear-gradient(to bottom, rgba(36, 36, 36, 0.38), $primary),
+    url("../images/bg.jpg");
+  text-align: center;
+  padding-top: 272px;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 96px;
+  color: white;
+
+  h1 {
+    font-size: 51px;
+  }
+  p {
+    max-width: 637px;
+    width: 90%;
+    margin: 7px auto 62px auto;
+    font-weight: 300;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 85%;
+    margin: 0 auto;
+    button {
+      padding: 11px 48px;
+      min-width: 235px;
+      font-size: 18px;
+      margin: 21px;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+
+    .clicked {
+      background-color: white;
+      color: black;
+    }
+  }
+}
